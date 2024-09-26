@@ -1,0 +1,2438 @@
+@import url('../fonts/jejumyeongjo.ttf');
+
+:root {
+    --font-family: 'JejuMyeonjo';
+    src: url("../fonts/jejumyeongjo.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul,
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    --font-family: 'JejuMyeonjo';
+}
+
+body {
+    font-family: ('JejuMyeonjo');
+    transition: 0.3s ease-in-out;
+    background-color: #fff;
+    --font-family: 'JejuMyeonjo';
+}
+
+.modalNumber {
+    position: fixed;
+    bottom: 50px;
+    left: 70px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 20px;
+    font-size: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+border: 4px solid rgb(231, 41, 73);
+    display: none;
+}
+
+.modalNumber.show {
+    display: flex;
+}
+
+.content {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.px-150 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+
+/* шапка */
+
+.header-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 55px;
+}
+
+.header-logo a {
+    --font-family: 'JejuMyeonjo';
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.header-logo img {
+    max-width: 30px;
+    align-items: center;
+}
+
+.header-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 69px;
+}
+
+.header-nav {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #2d2d2d;
+    font-weight: 400;
+    font-size: 25px;
+    height: 70px;
+    align-items: center;
+}
+
+.header-nav a {
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.header-nav .knop {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.header-nav .knop img {
+    max-height: 28px;
+    width: 38px;
+    padding-top: 3px;
+}
+
+.header-nav a img {
+    padding-left: 10px;
+}
+
+
+.header-nav a:hover {
+    color: #586349;
+}
+
+.header-icon {
+    display: flex;
+
+}
+
+.header {
+    margin: 0 180px;
+}
+
+.header-icons i {
+    cursor: pointer;
+}
+
+.fa-solid.fa-bars {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* баннер */
+
+.banner {
+  
+    font-family: 'JejuMyeonjo';
+    background: url(../assets/media/banner.png) no-repeat;
+    width: 100%;
+    height: 110vh;
+    background-size: 100%;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    height: 100%;
+    padding-left: 400px;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding-bottom: 200px;
+}
+
+.banner-text h3 {
+    font-weight: 300;
+    font-size: 75px;
+    color: #000000;
+    text-align: right;
+}
+
+.banner-text h3 span {
+    font-weight: 300;
+    font-size: 75px;
+    color: #000000;
+    margin-left: 160px;
+    text-align: right;
+}
+
+
+.banner-text h2 {
+    font-weight: 400;
+    font-size: 64px;
+    color: #283618;
+}
+
+.banner-text button {
+    font-family: 'JejuMyeonjo';
+    outline: none;
+ 
+    background-color: white;
+    border: black 1px solid;
+    border-radius: 16px;
+    font-weight: 450px;
+    font-size: 28px;
+    color: #283618;
+    margin-left: 160px;
+    text-align: right;
+    padding: 15px 40px;
+    margin-bottom: 70px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.banner-text button:hover {
+    border: 2px solid transparent;
+    background-color: #480013;
+    color: #fff;
+    box-shadow: 6px 7px 0px 2px #fff;
+}
+
+.container h1 {
+    margin-top: 120px;
+
+    font-weight: 500;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #283618;
+
+    text-align: center;
+}
+
+.banner .s {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.banner .stop {
+    text-align: center;
+    background: url(../assets/media/stop.png), no-repeat;
+    display: flex;
+    justify-content: center;
+    width: 1240px;
+    background-size: 100%;
+    height: 10vh;
+    background-repeat: no-repeat;
+}
+
+
+/* каталог */
+
+/* .katal{
+    height: 1230px;
+   width: 1250px;
+text-align: center;
+align-items: center;
+padding-top: 10px;
+
+} */
+
+.katalogi {
+    font-family: 'JejuMyeonjo';
+    margin: 0 auto;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    width: 1280px;
+    background-size: 100%;
+    /* padding-right: 70px; */
+    align-items: center;
+    text-align: center;
+    padding-top: 25vh;
+}
+
+.stop button {
+    text-align: center;
+    border: #000000 3px solid;
+    border-radius: 16px;
+    width: 235px;
+    height: 80px;
+    background: #fff;
+    font-size: 35px;
+    align-items: center;
+    font-family: 'JejuMyeonjo';
+}
+
+.kartochkivse {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 150px;
+    font-family: 'JejuMyeonjo';
+}
+
+.kartochkivse .carts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 90px;
+    padding-bottom: 40px;
+}
+
+.carts .karta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.karta .ph {
+    align-items: center;
+    text-align: center;
+    max-width: 370px;
+}
+
+.karta img {
+    width: 350px;
+}
+
+.karta .text {
+    font-family: 'JejuMyeonjo';
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 30px;
+}
+
+.karta .btn {
+    display: flex;
+    justify-content: right;
+    text-align: center;
+}
+
+.karta button {
+    font-family: 'JejuMyeonjo';
+    font-size: 25px;
+    border: 1px solid #FFD3DF;
+    background-color: #FFD3DF;
+    text-align: center;
+    align-items: center;
+    height: 45px;
+    width: 190px;
+    border-radius: 8px;
+}
+
+/* переходик от каталога к другому блоку след */
+
+.si {
+    display: flex;
+    justify-content: center;
+    padding-top: 250px;
+    padding-bottom: 30px;
+}
+
+.stops {
+    text-align: center;
+    background: url(../assets/media/stop.png), no-repeat;
+    display: flex;
+    justify-content: center;
+    width: 1240px;
+    background-size: 100%;
+    height: 10vh;
+    background-repeat: no-repeat;
+}
+
+.stops button {
+    font-family: 'JejuMyeonjo';
+    text-align: center;
+    border: #000000 3px solid;
+    border-radius: 16px;
+    width: 300px;
+    height: 80px;
+    background: #fff;
+    font-size: 35px;
+    align-items: center;
+}
+
+
+/* контакты */
+
+.kontakts {
+    font-family: 'JejuMyeonjo';
+    background: url(../assets/media/kotn.png);
+    display: flex;
+    flex-direction: row;
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 600px;
+}
+
+.kontakts .ok {
+    width: 760px;
+    height: 400px;
+}
+
+
+.kontakts .teext {
+    font-family: 'JejuMyeonjo';
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    gap: 80px;
+    padding-top: 100px;
+}
+
+.teext h2 {
+    text-align: left;
+    width: 350px;
+    font-size: 25px;
+    font-family: 'JejuMyeonjo';
+}
+
+.teext .pch {
+    padding-left: 80px;
+}
+
+.teext .adr {
+    padding-left: 160px;
+    width: 550px;
+}
+
+
+/* футер крч */
+
+footer {
+    max-width: 1280px;
+    height: 200px;
+    font-family: 'JejuMyeonjo';
+}
+
+.foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 25px;
+    height: 150px;
+}
+
+.foot .stolb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.foot .sto {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#burger,
+[for=burger] {
+    display: none;
+}
+
+@media screen and (max-width: 440px) {
+body{
+
+    height: 3500px;
+}
+    /* шапка */
+.menu-burger__header{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 50px;
+}
+
+    [for=burger] {
+        display: block;
+        position: fixed;
+        width: 30px;
+        text-align: center;
+        right: 20px;
+    }
+
+    [for=burger]::before {
+        content: '☰';
+        font-size: 25px;
+    }
+
+    .container {
+        max-width: 400px;
+    }
+    nav{
+        display: none;
+        justify-content: space-around;
+        gap: 10px;
+        top: 0;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .header-nav img{
+        display: none;
+    }
+
+
+    .header-nav {
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+
+        color: #2d2d2d;
+        font-weight: 180px;
+        font-size: 10px;
+        align-items: center;
+        height: 10px;
+
+        
+    }
+    label a{
+        font-size: 10px;
+    }
+    label{
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        text-align: right;
+        padding: 0 10px;
+width: 10px;
+    }
+
+    #burger:checked + [for=burger] + nav{
+display: block;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+padding: 20px;
+    }
+
+    #burger:checked + [for=burger]::before{
+        content: 'x';
+        background-color: rgb(255, 255, 255);
+    }
+
+    /* баннер */
+
+    .banner {
+        background: url(../assets/media/banner.png) no-repeat;
+        width: 100%;
+        height: 50vh;
+        background-size: 100%;
+    }
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: right;
+        height: 40vh;
+        padding-left: 10px;
+    }
+
+    .banner-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 120px;
+    }
+
+    .banner-text h3 {
+        font-weight: 100;
+        font-size: 20px;
+        color: #000000;
+        text-align: right;
+        padding-top: 100px;
+    }
+
+    .banner-text h3 span {
+        font-weight: 100;
+        font-size: 20px;
+        color: #000000;
+        margin-left: 160px;
+        text-align: right;
+    }
+
+
+    .banner-text h2 {
+        font-weight: 200;
+        font-size: 14px;
+        color: #283618;
+    }
+
+    .banner-text button {
+        outline: none;
+        background-color: white;
+        border: black 1px solid;
+        font-size: 10px;
+        color: #283618;
+        text-align: right;
+        padding: 8px 10px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .banner-text button:hover {
+        border: 2px solid transparent;
+        background-color: #283618;
+        color: #fff;
+        box-shadow: 6px 7px 0px 2px #fff;
+    }
+
+    .container h1 {
+        margin-top: 120px;
+
+        font-weight: 200;
+        font-size: 36px;
+        text-transform: uppercase;
+        color: #283618;
+
+        text-align: center;
+    }
+
+    .banner .s {
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner .stop {
+        text-align: center;
+        background: url(../assets/media/stop.png), no-repeat;
+        display: flex;
+        justify-content: center;
+        width: 340px;
+        background-size: 100%;
+        height: 5vh;
+        background-repeat: no-repeat;
+    }
+
+
+    /* каталог */
+
+    .katal {
+        height: 2550px;
+    
+        width: 440px;
+        text-align: center;
+        align-items: center;
+        padding-top: 10px;
+
+    }
+
+    .katalogi {
+        margin: 0 auto;
+        height: 278vh;
+        display: flex;
+        justify-content: center;
+        width: 440px;
+        background-size: 100%;
+        /* padding-right: 70px; */
+        align-items: center;
+        text-align: center;
+        padding-top: 25vh;
+    }
+
+    .stop button {
+        text-align: center;
+        border: #000000 1px solid;
+        border-radius: 16px;
+        width: 80px;
+        height: 25px;
+        background: #fff;
+        font-size: 15px;
+        align-items: center;
+    }
+
+    .kartochkivse {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 250px;
+        align-items: center;
+
+    }
+
+    .kartochkivse .carts {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        grid-gap: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+
+        width: 300px;
+    }
+
+    .carts .karta {
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: left;
+        padding-left: 40px;
+    }
+
+    .karta .ph {
+        align-items: center;
+        text-align: center;
+        max-width: 90px;
+    }
+
+    .karta img {
+        width: 200px;
+    }
+
+    .karta .text {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        font-size: 25px;
+        width: 200px;
+    }
+
+    .karta .btn {
+        display: flex;
+        justify-content: left;
+        text-align: center;
+    }
+
+  
+
+    /* переходик от каталога к другому блоку след */
+
+ 
+   
+
+    .stops button {
+        text-align: center;
+        border: #000000 1px solid;
+        border-radius: 16px;
+        width: 180px;
+        height: 25px;
+        background: #fff;
+        font-size: 15px;
+
+        align-items: center;
+    }
+
+    .si {
+        display: flex;
+        justify-content: center;
+    }
+
+    .stops {
+        text-align: center;
+        margin-top: 100px;
+        background: url(../assets/media/stop.png), no-repeat;
+        display: flex;
+        justify-content: center;
+        width: 340px;
+        background-size: 100%;
+        height: 5vh;
+        background-repeat: no-repeat;
+    }
+
+
+
+    /* контакты */
+
+    .kontakts {
+        background: url(../assets/media/kotn.png);
+        display: flex;
+        flex-direction: row;
+
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 200px;
+    }
+
+    .kontakts .ok {
+        width: 400px;
+        height: 200px;
+    }
+
+
+    .kontakts .teext {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        gap: 20px;
+        padding-top: 20px;
+    }
+
+    .teext h2 {
+        text-align: left;
+        width: 200px;
+        font-size: 10px;
+    }
+
+    .teext .pch {
+        padding-left: 40px;
+    }
+
+    .teext .adr {
+        padding-left: 60px;
+        width: 250px;
+    }
+
+
+    /* футер крч */
+
+    footer {
+        max-width: 440px;
+        height: 200px;
+    }
+
+    .foot {
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
+        font-size: 15px;
+        gap: 40px;
+        width: 200px;
+        height: 150px;
+    }
+
+    .foot .stolb {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .foot .sto {
+        text-align: left;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+}
+
+/* главная закончилась */
+
+
+
+/* карточка товара */
+
+.kart {
+    font-family: 'JejuMyeonjo';
+    max-width: 1280px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.kart .nazad {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 400px;
+    height: 40px;
+    padding-left: 65px;
+    margin-bottom: 20px;
+}
+
+.nazad img {
+    width: 33px;
+    height: 10px;
+    margin-top: 15px;
+}
+
+.nazad a {
+    font-family: 'JejuMyeonjo';
+    margin-top: 8px;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #686868;
+}
+
+
+.kart .kartoc {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    height: 500px;
+    width: 1280px;
+    padding-left: 80px;
+}
+
+.kartoc .maff {
+    height: 500px;
+    width: 415px;
+    display: flex;
+    flex-direction: column;
+}
+
+.maff .glav img {
+    width: 350px;
+    height: 350px;
+
+}
+
+.maff .dve {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}
+
+.maff .dve img {
+    width: 165px;
+    height: 85px;
+}
+
+.maff .dve {
+    display: flex;
+    flex-direction: row;
+}
+
+.kartoc .textmaf {
+    font-family: 'JejuMyeonjo';
+    height: 600px;
+    width: 660px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    gap: 16px;
+}
+
+.textmaf h2 {
+    color: #480013;
+    font-size: 42px;
+}
+
+.textmaf h3 {
+    color: #480013;
+    font-size: 28px;
+}
+
+.textmaf p {
+    font-size: 25px;
+}
+
+.textmaf button {
+    font-family: 'JejuMyeonjo';
+    margin-top: 10px;
+    background-color: #480013;
+    width: 400px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #480013;
+}
+
+.textmaf .korz a {
+    color: white;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+@media screen and (max-width: 440px) {
+    
+body{
+    height: 1700px;
+}
+
+ /* шапка */
+.menu-burger__header{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 50px;
+}
+
+    [for=burger] {
+        display: block;
+        position: fixed;
+        width: 30px;
+        text-align: center;
+        right: 20px;
+    }
+
+    [for=burger]::before {
+        content: '☰';
+        font-size: 25px;
+    }
+
+    .container {
+        max-width: 400px;
+    }
+    nav{
+        display: none;
+        justify-content: space-around;
+        gap: 10px;
+        top: 0;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .header-nav img{
+        display: none;
+    }
+
+
+    .header-nav {
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+
+        color: #2d2d2d;
+        font-weight: 180px;
+        font-size: 10px;
+        align-items: center;
+        height: 10px;
+
+        
+    }
+    label a{
+        font-size: 10px;
+    }
+    label{
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        text-align: right;
+        padding: 0 10px;
+width: 10px;
+    }
+
+    #burger:checked + [for=burger] + nav{
+display: block;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+padding: 20px;
+    }
+
+    #burger:checked + [for=burger]::before{
+        content: 'x';
+        background-color: rgb(255, 255, 255);
+    }
+
+    /* баннер */
+
+
+.kart {
+    max-width: 440px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.kart .nazad {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 40px;
+    height: 40px;
+    padding-left: 65px;
+    margin-bottom: 20px;
+}
+
+.nazad img {
+    width: 33px;
+    height: 10px;
+    margin-top: 15px;
+}
+
+.nazad a {
+    margin-top: 8px;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #686868;
+}
+
+
+.kart .kartoc {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    height: 400px;
+    width: 420px;
+    padding-left: 60px;
+    padding-top: 40px;
+}
+
+.kartoc .maff {
+    height: 300px;
+    width: 305px;
+    display: flex;
+    flex-direction: column;
+}
+
+.maff .glav img {
+    width: 240px;
+    height: 240px;
+
+}
+
+.maff .dve {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    padding-left: 5px;
+}
+
+.maff .dve img {
+    width: 110px;
+    height: 70px;
+}
+
+.maff .dve {
+    display: flex;
+    flex-direction: row;
+}
+
+.kartoc .textmaf {
+    height: 600px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    gap: 16px;
+    padding-top: 60px;
+}
+
+.textmaf h2 {
+    color: #480013;
+    font-size: 28px;
+}
+
+.textmaf h3 {
+    color: #480013;
+    font-size: 22px;
+}
+
+.textmaf p {
+    font-size: 15px;
+}
+
+.textmaf button {
+    margin-top: 10px;
+    background-color: #480013;
+    width: 300px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #480013;
+}
+
+.textmaf .korz a {
+    color: white;
+    text-align: center;
+    font-size: 22px;
+}
+ /* футер крч */
+
+ footer {
+    max-width: 440px;
+    height: 600px;
+    padding-top: 800px;
+}
+
+.foot {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    font-size: 20px;
+    padding-left: 40px;
+    gap: 40px;
+    width: 300px;
+    height: 150px;
+}
+
+.foot .stolb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.foot .sto {
+    text-align: left;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+}
+/* карточка закрыласб */
+
+/* вход и регистрация */
+
+
+.vhod {
+    height: 700px;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'JejuMyeonjo';
+}
+
+.vhod .forma {
+    margin-top: 80px;
+    width: 600px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+
+.forma h2 {
+    font-size: 40px;
+    color: #480013;
+}
+
+.forma .form form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    font-family: 'JejuMyeonjo';
+    width: 400px;
+    height: 60px;
+    background-color: transparent;
+    /* text-decoration: underline #480013 2px solid; */
+    border: none;
+    border-bottom: 2px solid black;
+    padding-bottom: 2px;
+    font-size: 25px;
+    /* text-underline-offset: 3px; */
+    color: #00000077;
+
+    padding: 10px;
+}
+
+form button {
+    font-family: 'JejuMyeonjo';
+    width: 400px;
+    height: 50px;
+    background-color: #480013;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.form p {
+    font-size: 20px;
+    text-align: left;
+    color: black;
+    padding-left: 100px;
+}
+
+.form p span {
+    color: #FA0141;
+    text-decoration: underline;
+}
+
+
+/* закрытие входа и рег */
+
+/* открытие админки */
+.admink {
+    height: 900px;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: row;
+    color: #000000;
+    padding-top: 60px;
+    gap: 60px;
+}
+
+.admink .left {
+    gap: 20px;
+    height: 670px;
+    justify-content: flex-start;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    background-color: #ffd3df61;
+}
+
+.left .name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 80px;
+    width: 300px;
+    gap: 20px;
+    padding-left: 30px;
+}
+
+.name .imagg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.name .txtname {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.right .cifri {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    color: white;
+    padding-top: 30px;
+}
+
+.cifri .onee {
+    background-color: #480013;
+    border: 1px solid #480013;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+.cifri p {
+    background-color: #48001332;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+.txtname p {
+    font-size: 18px;
+    color: #FA0141;
+}
+
+.left .panel {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 80px;
+    padding-top: 10px;
+}
+
+.panel .tovrs {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 23px;
+    padding-left: 10px;
+}
+
+.tovrs a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tovrs img {
+    width: 24px;
+    height: 24px;
+}
+
+.left .tovar {
+    display: flex;
+    padding-left: 60px;
+
+}
+
+.left h3 {
+    font-size: 28px;
+}
+
+.admink .right {
+    width: 850px;
+}
+
+.right .vse {
+    text-align: left;
+    padding-left: 80px;
+    padding: 0 10px 20px 0;
+    font-size: 40px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.right .kartaodna {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    height: 120px;
+    border: #480013 2px solid;
+    width: 900px;
+    gap: 40px;
+}
+
+.right .kont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.kartaodna .txtkeksi {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.txtkeksi h3 {
+    font-size: 29px;
+    width: 400px;
+}
+
+.kartaodna .sl {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+}
+
+.kartaodna .knopp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.knopp button {
+    font-family: 'JejuMyeonjo';
+    text-align: center;
+    background-color: #480013;
+    border-radius: 5px;
+    border: 1px #480013 solid;
+    height: 40px;
+    width: 190px;
+    color: white;
+    font-size: 20px;
+}
+
+@media screen and ( max-width:440px ) {
+     
+body{
+    height: 1700px;
+}
+
+ /* шапка */
+.menu-burger__header{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 50px;
+}
+
+    [for=burger] {
+        display: block;
+        position: fixed;
+        width: 30px;
+        text-align: center;
+        right: 20px;
+    }
+
+    [for=burger]::before {
+        content: '☰';
+        font-size: 25px;
+    }
+
+    .container {
+        max-width: 400px;
+    }
+    nav{
+        display: none;
+        justify-content: space-around;
+        gap: 10px;
+        top: 0;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .header-nav img{
+        display: none;
+    }
+
+
+    .header-nav {
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+
+        color: #2d2d2d;
+        font-weight: 180px;
+        font-size: 10px;
+        align-items: center;
+        height: 10px;
+
+        
+    }
+    label a{
+        font-size: 10px;
+    }
+    label{
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        text-align: right;
+        padding: 0 10px;
+width: 10px;
+    }
+
+    #burger:checked + [for=burger] + nav{
+display: block;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+padding: 20px;
+    }
+
+    #burger:checked + [for=burger]::before{
+        content: 'x';
+        background-color: rgb(255, 255, 255);
+    }
+
+    /* баннер */
+
+
+.vhod {
+    height: 600px;
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vhod .forma {
+    margin-top: 80px;
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+
+.forma h2 {
+    font-size: 30px;
+    color: #480013;
+}
+
+.forma .form form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    font-family: 'JejuMyeonjo';
+    width: 350px;
+    height: 60px;
+    background-color: transparent;
+    /* text-decoration: underline #480013 2px solid; */
+    border: none;
+    border-bottom: 2px solid black;
+    padding-bottom: 2px;
+    font-size: 20px;
+    /* text-underline-offset: 3px; */
+    color: #00000077;
+
+    padding: 10px;
+}
+
+form button {
+    font-family: 'JejuMyeonjo';
+    width: 350px;
+    height: 50px;
+    background-color: #480013;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.form p {
+    font-size: 15px;
+    text-align: left;
+    color: black;
+    padding-left: 25px;
+    font-family: 'JejuMyeonjo';
+}
+
+.form p span {
+    font-family: 'JejuMyeonjo';
+    color: #FA0141;
+    text-decoration: underline;
+}
+
+
+/* закрытие входа и рег */
+
+/* открытие админки */
+.admink {
+    font-family: 'JejuMyeonjo';
+    height: 800px;
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    padding-top: 60px;
+    gap: 60px;
+}
+
+.admink .left {
+    gap: 20px;
+    height: 70px;
+    justify-content: flex-start;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 5px;
+    padding-top: 1px;
+    background-color: #ffd3df61;
+}
+
+.left .name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 20px;
+    width: 100px;
+    gap: 20px;
+    padding-left: 140px;
+    padding-top: 15px;
+}
+
+.name .imagg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40px;
+padding-left: 80px;
+padding-top: 20px;
+}
+
+.name .txtname {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 20px;
+width: 200px;
+padding-left: 30px;
+padding-top: 0px;
+padding-bottom: 20px;
+}
+
+.right .cifri {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    color: white;
+    padding-top: 30px;
+    padding-left: 60px;
+}
+
+.cifri .onee {
+    background-color: #480013;
+    border: 1px solid #480013;
+    padding: 7px 9px;
+    font-size: 10px;
+}
+
+.cifri p {
+    background-color: #48001332;
+    padding: 7px 9px;
+    font-size: 10px;
+}
+
+.txtname p {
+    font-size: 18px;
+    padding-bottom: 8px;
+    color: #FA0141;
+    padding-left: 10px;
+}
+
+.left .panel {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    padding-top: 90px;
+}
+
+.panel .tovrs {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 10px;
+    padding-left: 10px;
+    margin-bottom: 18px;
+}
+
+.tovrs a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tovrs img {
+    width: 24px;
+    height: 24px;
+}
+
+.left .tovar {
+    display: none;
+    padding-left: 10px;
+    padding-top: 10px;
+
+}
+
+.left h3 {
+    font-size: 18px;
+    width: 150px;
+}
+
+.admink .right {
+    width: 350px;
+}
+
+.right .vse {
+    text-align: left;
+    padding-left: 80px;
+    padding: 0 10px 20px 0;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.right .kartaodna {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    height: 100px;
+    border: #480013 2px solid;
+    width: 300px;
+    gap: 10px;
+   
+}
+
+.right .kont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.kartaodna .txtkeksi {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    gap: 5px;
+    width: 300px;
+}
+
+.txtkeksi h3 {
+    font-size: 15px;
+    width: 200px;
+}
+
+.kartaodna .sl {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 300px;
+    align-items: center;
+}
+
+.kartaodna .knopp {
+    font-family: 'JejuMyeonjo';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.knopp button {
+    font-family: 'JejuMyeonjo';
+    text-align: center;
+    background-color: #480013;
+    border-radius: 5px;
+    border: 1px #480013 solid;
+    height: 35px;
+    width: 60px;
+    color: white;
+    font-size: 12px;
+}
+
+ /* футер крч */
+
+ footer {
+    max-width: 440px;
+    height: 200px;
+    padding-top: 700px;
+}
+
+.foot {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    font-size: 20px;
+    padding-left: 40px;
+    gap: 10px;
+    width: 300px;
+    height: 400px;
+}
+
+.foot .stolb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.foot .sto {
+    padding-top: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+}
+/* закрытие админки */
+
+/* открытие панелей */
+.paneel {
+    font-family: 'JejuMyeonjo';
+    height: 900px;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: row;
+    color: #000000;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 60px;
+    gap: 60px;
+}
+
+.paneel .okna {
+    width: 960px;
+    height: 600px;
+    border: 2px solid #480013;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.okna h2 {
+    padding-top: 50px;
+    font-size: 35px;
+    padding-bottom: 30px;
+}
+
+.okna .carta {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+.carta .lef {
+    width: 310px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.lef .imade {
+    width: 310px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 13px;
+}
+
+.imade img {
+    width: 142px;
+}
+
+.okna h2 {
+    font-size: 40px;
+    color: #480013;
+}
+
+.carta .righ {
+    width: 380px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.righ .btnk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 250px;
+    height: 110px;
+    gap: 10px;
+}
+
+.btnk button {
+    font-family: 'JejuMyeonjo';
+    width: 240px;
+    height: 60px;
+    background-color: #480013;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    border: none;
+}
+
+.righ input {
+    font-family: 'JejuMyeonjo';
+    background-color: transparent;
+    border: none;
+}
+
+.righ .txtr {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #4800137e;
+}
+
+.txtr .hi {
+    font-size: 35px;
+    color: #4800137e;
+}
+
+.txtr p {
+    font-size: 25px;
+}
+
+.btnk .knopkaproz {
+    background-color: #4800137e;
+    border: 2px solid #4800137e;
+}
+
+.txtr input {
+    width: 400px;
+    font-size: 20px;
+    color: #4800137e;
+}
+
+.txtr ::placeholder {
+    color: #4800137e;
+}
+
+.txtr .chck {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.chck input {
+    width: 20px;
+    height: 20px;
+}
+
+.foot .stolb a {
+    text-align: left;
+}
+
+.paneeli .ono {
+    font-family: 'JejuMyeonjo';
+    width: 960px;
+    height: 330px;
+    border: 2px solid #480013;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.ono h2 {
+    font-size: 35px;
+    color: #480013;
+}
+
+.ono p {
+    font-size: 25px;
+}
+
+.ono .danet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.ono .danet button {
+    font-family: 'JejuMyeonjo';
+    width: 250px;
+    height: 60px;
+    border-radius: 8px;
+    font-size: 25px;
+}
+
+.danet .ot {
+    background-color: transparent;
+    border: 2px solid #480013;
+    color: black;
+    width: 250px;
+    height: 60px;
+}
+
+.danet .yd {
+    background-color: #480013;
+    color: white;
+    width: 250px;
+    height: 60px;
+}
+
+.paneeli {
+    height: 900px;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: row;
+    color: #000000;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 140px;
+    gap: 60px;
+}
+
+/* открытие удаления */
+
+/* открытие добавления */
+
+@media screen and (max-width: 440px) {
+
+    body{
+        height: 1700px;
+    }
+    
+     /* шапка */
+    .menu-burger__header{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        height: 50px;
+    }
+    
+        [for=burger] {
+            display: block;
+            position: fixed;
+            width: 30px;
+            text-align: center;
+            right: 20px;
+        }
+    
+        [for=burger]::before {
+            content: '☰';
+            font-size: 25px;
+        }
+    
+        .container {
+            max-width: 400px;
+        }
+        nav{
+            display: none;
+            justify-content: space-around;
+            gap: 10px;
+            top: 0;
+            background-color: rgb(255, 255, 255);
+        }
+    
+        .header-nav img{
+            display: none;
+        }
+    
+    
+        .header-nav {
+            display: flex;
+            gap: 10px;
+            flex-direction: row;
+    
+            color: #2d2d2d;
+            font-weight: 180px;
+            font-size: 10px;
+            align-items: center;
+            height: 10px;
+    
+            
+        }
+        label a{
+            font-size: 10px;
+        }
+        label{
+            display: flex;
+            flex-direction: column;
+            align-items: right;
+            text-align: right;
+            padding: 0 10px;
+    width: 10px;
+        }
+    
+        #burger:checked + [for=burger] + nav{
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+        }
+    
+        #burger:checked + [for=burger]::before{
+            content: 'x';
+            background-color: rgb(255, 255, 255);
+        }
+    
+        /* баннер */
+
+        
+    .paneel {
+        height: 900px;
+        max-width: 440px;
+        display: flex;
+        flex-direction: row;
+        color: #000000;
+        justify-content: space-around;
+        text-align: center;
+        padding-top: 60px;
+        gap: 30px;
+    }
+    
+    .paneel .okna {
+        width: 440px;
+        height: 600px;
+        border: 2px solid #480013;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+ 
+    .okna .carta {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        padding-bottom: 90px;
+        padding-left: 45px;
+    }
+    
+    .carta .lef {
+        width: 90px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .lef .imade {
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        padding-left: 155px;
+    }
+    
+    .imade img {
+        width: 145px;
+        height: 90px;
+        padding-top: 10px;
+   
+    }
+    
+    .okno h2 {
+        font-size: 30px;
+        color: #480013;
+        padding-bottom: 20px;
+    }
+    
+    .carta .righ {
+        width: 180px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: left;
+    }
+    
+    .righ .btnk {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+       margin-top: 40px;
+
+        gap: 10px;
+    }
+    
+    .btnk button {
+        margin-left: 50px;
+        width: 200px;
+        height: 60px;
+        background-color: #480013;
+        border-radius: 8px;
+        color: white;
+        font-size: 18px;
+        border: none;
+    }
+    
+    .righ input {
+        background-color: transparent;
+        border: none;
+    }
+    
+    .righ .txtr {
+        height: 950px;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        width: 300px;
+        color: #4800137e;
+        padding-top: 400px;
+    }
+    
+    .txtr .hi {
+        width: 350px;
+        font-size: 25px;
+        color: #4800137e;
+    }
+    
+    .txtr p {
+        max-width: 350px;
+        font-size: 22px;
+    }
+    
+    .btnk .knopkaproz {
+        background-color: #4800137e;
+        border: 2px solid #4800137e;
+        width: 200px;
+        height: 60px;
+    }
+    
+    .knopkaproz a{
+        width: 200px;
+    }
+    .txtr input {
+        max-width: 350px;
+        font-size: 17px;
+        color: #4800137e;
+    }
+    
+    .txtr ::placeholder {
+        color: #4800137e;
+    }
+    
+    .txtr .chck {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .chck input {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .foot .stolb a {
+        text-align: left;
+    }
+    
+    .paneeli .ono {
+        width: 400px;
+        height: 300px;
+        border: 2px solid #480013;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    .ono h2 {
+        font-size: 25px;
+        color: #480013;
+    }
+    
+    .ono p {
+        font-size: 20px;
+    }
+    
+    .ono .danet {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .ono .danet button {
+        width: 150px;
+        height: 40px;
+        border-radius: 8px;
+        font-size: 20px;
+    }
+    
+    .danet .ot {
+        background-color: transparent;
+        border: 2px solid #480013;
+        color: black;
+        width: 250px;
+        height: 60px;
+    }
+    
+    .danet .yd {
+        background-color: #480013;
+        color: white;
+        width: 250px;
+        height: 60px;
+    }
+    
+    .paneeli {
+        height: 900px;
+        max-width: 1280px;
+        display: flex;
+        flex-direction: row;
+        color: #000000;
+        justify-content: space-around;
+        text-align: center;
+        padding-top: 140px;
+        gap: 60px;
+    }
+    
+    /* открытие удаления */
+    
+    footer {
+        max-width: 440px;
+        height: 200px;
+        padding-bottom: 20px;
+    }
+
+    .foot {
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
+        font-size: 15px;
+        gap: 40px;
+        width: 200px;
+        height: 150px;
+    }
+
+    .foot .stolb {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .foot .sto {
+        text-align: left;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+}
+ 
+

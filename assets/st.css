@@ -1,0 +1,213 @@
+/* открытие панелей */
+.paneel {
+    font-family: 'JejuMyeonjo';
+    height: 900px;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: row;
+    color: #000000;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 60px;
+    gap: 60px;
+}
+
+.paneel .okna {
+    width: 960px;
+    height: 600px;
+    border: 2px solid #480013;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.okna h2 {
+    padding-top: 50px;
+    font-size: 35px;
+    padding-bottom: 30px;
+}
+
+.okna .carta {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+.carta .lef {
+    width: 310px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.lef .imade {
+    width: 310px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 13px;
+}
+
+.imade img {
+    width: 142px;
+}
+
+.okna h2 {
+    font-size: 40px;
+    color: #480013;
+}
+
+.carta .righ {
+    width: 380px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.righ .btnk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 250px;
+    height: 110px;
+    gap: 10px;
+}
+
+.btnk button {
+    font-family: 'JejuMyeonjo';
+    width: 240px;
+    height: 60px;
+    background-color: #480013;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    border: none;
+}
+
+.righ input {
+    font-family: 'JejuMyeonjo';
+    background-color: transparent;
+    border: none;
+}
+
+.righ .txtr {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #4800137e;
+}
+
+.txtr .hi {
+    font-size: 35px;
+    color: #4800137e;
+}
+
+.txtr p {
+    font-size: 25px;
+}
+
+.btnk .knopkaproz {
+    background-color: #4800137e;
+    border: 2px solid #4800137e;
+}
+
+.txtr input {
+    width: 400px;
+    font-size: 20px;
+    color: #4800137e;
+}
+
+.txtr ::placeholder {
+    color: #4800137e;
+}
+
+.txtr .chck {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.chck input {
+    width: 20px;
+    height: 20px;
+}
+
+.foot .stolb a {
+    text-align: left;
+}
+
+.paneeli .ono {
+    font-family: 'JejuMyeonjo';
+    width: 960px;
+    height: 330px;
+    border: 2px solid #480013;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.ono h2 {
+    font-size: 35px;
+    color: #480013;
+}
+
+.ono p {
+    font-size: 25px;
+}
+
+.ono .danet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.ono .danet button {
+    font-family: 'JejuMyeonjo';
+    width: 250px;
+    height: 60px;
+    border-radius: 8px;
+    font-size: 25px;
+}
+
+.danet .ot {
+    background-color: transparent;
+    border: 2px solid #480013;
+    color: black;
+    width: 250px;
+    height: 60px;
+}
+
+.danet .yd {
+    background-color: #480013;
+    color: white;
+    width: 250px;
+    height: 60px;
+}
+
+.paneeli {
+    height: 900px;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: row;
+    color: #000000;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 140px;
+    gap: 60px;
+}
+
+/* открытие удаления */
+
+/* от
